@@ -1,0 +1,33 @@
+.masterdrez-board {
+  display: grid;
+  grid-template-columns: repeat(16, 40px);
+  grid-template-rows: repeat(16, 40px);
+  width: fit-content;
+  margin: 20px auto;
+}
+
+.square {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square.light {
+  background: #f0d9b5;
+}
+
+.square.dark {
+  background: #b58863;
+}
+
+.square.empty {
+  background: transparent;
+}
+
+.piece {
+  width: 36px;
+  height: 36px;
+  pointer-events: none;
+}
